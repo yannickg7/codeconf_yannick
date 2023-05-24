@@ -1,0 +1,59 @@
+@font-face{
+  font-family: toto;
+  src: url("webfonts/mavenp_Pro/MavenPro-Variablefont_wgh.ttf") format("truetype-variations");
+  font-variation-setting: 'wght'400, 'wght'900;
+}
+@font-face{
+  font-family: icon;
+  src: url("webfonts/codeconf-all/fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  -webkit-font-smoothing: antiliased;
+  -moz-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+header{
+  height: 200px;
+  background-color: powderblue;
+  display: flex;
+  text-align: center;
+ 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+li {
+  float:left;
+}
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+div.barheader{
+  height: 150px;
+  background-color: lightblue;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+div.main-speaker {  
+  position: relative;
+}
+
