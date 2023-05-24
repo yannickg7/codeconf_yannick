@@ -1,15 +1,14 @@
-
-
-
-
-
-
 header{
   height: 200px;
   background-color: powderblue;
   display: flex;
   text-align: center;
- 
+}
+
+
+
+nav{  
+  
 }
 
 ul {
@@ -31,16 +30,43 @@ li a{
   background-color: #dddddd;
 }
 
-div.barheader{
+.barheader{
   height: 150px;
-  background-color: lightblue;
-  position: absolute;
+  background-color: yellow;
+  position: relative;
   width: 100%;
+}
+
+nav{
+  position: absolute;
 }
 
 
 
-div.main-speaker {  
-  position: relative;
+.main-speaker {  
+}
+
+
+
+
+
+.fiche-speaker{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, mimax(12rem, 1fr));
+  background-color: blue;
+  padding: 10px;
+  width:  200px;
+  
+  
+}
+
+.fiche-item{
+  
+}
+
+.fiche-photo img{
+  width: 100%;
+aspect-ratio: 1;
+  object-fit: cover ;
 }
 
