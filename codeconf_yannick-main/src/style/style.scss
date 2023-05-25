@@ -1,0 +1,79 @@
+
+
+
+@import "webfonts";
+
+
+header{
+  height: 200px;
+  background-color: powderblue;
+  display: flex;
+  text-align: center;
+}
+
+
+
+nav{  
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+li {
+  float:left;
+}
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+.barheader{
+  height: 150px;
+  background-color: yellow;
+  position: relative;
+  width: 100%;
+}
+
+nav{
+  position: absolute;
+}
+
+
+
+.main-speaker {  
+  
+}
+
+
+
+
+
+.fiche-speaker{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, mimax(12rem, 1fr));
+  background-color: blue;
+  padding: 10px;
+  width:  200px;
+  
+  
+}
+
+.fiche-item{
+  
+}
+
+.fiche-photo img{
+  width: 100%;
+aspect-ratio: 1;
+  object-fit: cover ;
+}
+

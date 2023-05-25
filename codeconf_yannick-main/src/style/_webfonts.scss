@@ -1,0 +1,15 @@
+
+
+@font-face{
+  font-family: toto;
+  src: url("webfonts/mavenp_Pro/MavenPro-Variablefont_wgh.ttf") format("truetype-variations");
+  font-variation-setting: 'wght'400, 'wght'900;
+}
+@font-face{
+  font-family: icon;
+  src: url("webfonts/codeconf-all/fonts/codeconf.woff") format("woff");
+  font-weight: normal;
+  -webkit-font-smoothing: antiliased;
+  -moz-font-smoothing: grayscale;
+}
+
