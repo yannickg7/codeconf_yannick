@@ -1,63 +1,72 @@
-header{
-  height: 200px;
-  background-color: powderblue;
+
+
+
+@import "webfonts";
+
+
+*, *::before, *::after {
+  box-sizing: border-box 
+}
+  
+
+nav {
   display: flex;
-  text-align: center;
+  gap: 2rem;
+}
+.logo {
+  margin-inline-end: auto;
+  text-decoration: none;
+  font-family: "maven_Pro";
+}
+.hero {
+  display: grid;
+  border: 1px solid #888;
+  max-width: 80rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  background: #F07;
+  background-image: linear-gradient(blue, rgb(36, 39, 210), blue);
+
+  * {
+    border: 1px solid #888;
+  }
+  img.header {
+    position: relativ;
+    z-index: 2;
+    margin-block-start: -3rem;
+    width: 100%;
+    grid-column: 3/6;
+    grid-row: span 2;
+    pointer-events: none;
+    align-self: end;
+  }
+  h1, p {
+    grid-column: 6/11;
+  }
+  h1 {
+    align-self: end;
+  }
+  p {
+    align-self: start;
+  }
 }
 
-
-
-nav{  
-  
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background: #000;
-}
-
-li {
-  float:left;
-}
-
-li a{
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 8px;
-  background-color: #dddddd;
-}
-
-.barheader{
-  height: 150px;
-  background-color: yellow;
+nav {
+  background: white;
+  z-index: 1;
   position: relative;
-  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  border: 1px solid #888;
+  padding: 1rem;
 }
-
-nav{
-  position: absolute;
-}
-
-
-
-.main-speaker {  
-  
-}
-
-
-
-
 
 .fiche-speaker{
   display: grid;
   grid-template-columns: repeat(auto-fit, mimax(12rem, 1fr));
-  background-color: green;
+  background-color: blue;
   padding: 10px;
-  width:  200px;
-  
+  width:  200px;  
   
 }
 
@@ -71,3 +80,20 @@ aspect-ratio: 1;
   object-fit: cover ;
 }
 
+.form-speaker{
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+.listspeaker{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border: solid;
+
+}
+
+.form-speaker{
+  display: flex;
+  align-items: center;
+}

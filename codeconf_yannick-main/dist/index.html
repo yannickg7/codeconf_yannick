@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <LINK rel="stylesheet" type="text/css" href="dist/style/style.css">
+  <LINK rel="stylesheet" type="text/css" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +9,64 @@
 </head>
 <body>
   <header>
-<nav>
-  <a href="#" class="logo">codeconf</a>
-  <a href="#">link</a>
-  <a href="#">link</a>
-  <a href="#">link</a>
-  <a href="#">link</a>
-  <a href="#">link</a>
-</nav>
-
-<div class="hero">
-  <img src="https://assets.codepen.io/87353/presents%403x.png" alt="prs">
-  <h1>Welcome</h1>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, consequuntur dolore corporis in veniam vero?</p>
-</div>
+    <nav>
+      <a href="#" class="logo">Codeconf  2023 </a>
+      <a href="#">Schedule</a>
+      <a href="#">Event</a>
+      <a href="#">Speakers</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </nav>
+    
+    <div class="hero">
+      <img src="https://assets.codepen.io/87353/presents%403x.png" alt="prs">
+      <h1>Speaker Edition 2023</h1>
+      <p>Discover the speakers and the topics or suggest your own topic for our next event</p>
+    </div>
   
   </header>
-  
-  <div class ="fiche-speaker">
-    <div class ="fiche-photo"><img src="src/image/chris@3x.jpg"></div>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+  <h2>Speakers</h2>
+  <div class="listspeaker">
+  <div class ="fiche-speaker fiche-speaker--on">
+    <div class ="fiche-photo"><img src="images/chris@3x.jpg"></div>
+    <div class ="fiche-item">nom</div>
+    <div class ="fiche-item">pays</div>
+  </div>
+</div>
+
+  <div class ="fiche-speaker fiche-speaker--off">
     <div class ="fiche-item">nom</div>
     <div class ="fiche-item">pays</div>
   </div>
   
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+  <div class="form-speaker"></div>
+    <h1>Become speaker</h1><br>
+    <p>Do you have a topic that you like?
+      Submit it for the next event by filling out the form below. Do not forget to specify the subject and the related keywords
+      </p><br>
+    
+    <form action="/action_page.php">
+      <label for="name" class="form"></label><br>
+      <input type="text" id="name" name="name" value="Name"><br>
+      <label for="email"></label><br>
+      <input type="email" id="email" name="email" value="Mail"><br>
+      <label for="kword"></label><br>
+      <input type="kword" id="kword" name="kword" value="Keyword"><br>
+      <label for="subject"></label><br>
+      <input type="subject" id="subject" name="subject" value="Subject"><br>
+      <label for="subject"></label><br>
+      <input type="subject" id="subject" name="subject" value="Subject"><br>
+      
+      <input type="submit" value="SEND YOUR SUBJECT">
+    </form> 
+    </div>
+  
+
 </body>
 
 </html>
