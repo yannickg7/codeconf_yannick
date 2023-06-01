@@ -31,7 +31,7 @@ nav {
     border: 1px solid #888;
   }
   img.header {
-    position: relativ;
+    position: relative;
     z-index: 2;
     margin-block-start: -3rem;
     width: 100%;
@@ -97,3 +97,29 @@ aspect-ratio: 1;
   display: flex;
   align-items: center;
 }
+
+/* style page speakers */
+
+body {
+  background: yellow;
+  }
+  
+  .card{
+    margin: 2rem;
+    padding: 0.2rem;
+  &__main{
+    display: none;
+   
+  }
+  }
+  
+  .card--active {
+    .card__main {
+      display: block;
+  
+    }
+  }
+  
+  .card__pict{
+  display: none;
+  }
