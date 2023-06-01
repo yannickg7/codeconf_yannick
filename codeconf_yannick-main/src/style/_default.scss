@@ -1,0 +1,8 @@
+h1 {
+    font-family: toto;
+    font-variation-settings: 'wght'400;
+    &::before {
+      content: "\e93f";
+      font-family: icon;
+    }
+  }
